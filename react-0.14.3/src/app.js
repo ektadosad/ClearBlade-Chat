@@ -93,7 +93,7 @@ var App = React.createClass({
     //log in function.
     handleClick: function() {
         var USER = document.getElementById("username").value
-        if(!USER || string.trim().length() == 0){
+        if(!USER){
             document.getElementById("errorMessage").innerHTML="Pleae enter valid username";
         }
         else{
