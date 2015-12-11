@@ -1,3 +1,9 @@
+/*
+* Filename: app.js
+* Programmer: Ekta Dosad
+* Date:  12/11/2015
+*/
+
 //code for toggle display.
 function isDefined(val) { return val != null; }
 
@@ -139,6 +145,7 @@ var App = React.createClass({
     },
     
     goBack: function(){
+        messaging.unsubscribe("/clearBladeChat", {});
         this.setState({ show: !this.state.show });
     },
     
