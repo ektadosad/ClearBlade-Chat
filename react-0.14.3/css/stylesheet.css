@@ -1,0 +1,83 @@
+body{
+	font-family:sans-serif;
+	margin:0px auto;
+	font-weight:100;
+	background: #99CCFF; 
+	min-width: 700px;
+}
+
+#title{
+	width:100%;
+	height:33px;
+	top:0px;
+	text-align:center;
+	background-color:white;
+	padding:12px;
+	font-size: 180%;
+	font-weight: bold;
+	border-color:gray;
+}
+
+#back{
+	position:absolute;
+	height:33px;
+	top: 0px;
+	left:8px;
+	font-size:120%;
+	padding:3px;
+	background-color:white;
+}
+
+#view{
+	padding: 12px; 
+	margin: 5% 5% 0% 5%;
+	background-color:#C0C0C0;
+	text-align:center;
+	border-color:white;
+
+}
+
+#chatContent{
+	padding: 12px; 
+	margin: 5% 5% 0% 5%;
+	background-color:#C0C0C0;
+	text-align:center;
+	border-color:gray;
+}
+
+#chatDisplay{
+	font-size:100%;
+}
+
+#errorMessage{
+	font-size:100%;
+	font-weight: bold;
+	color: red;
+}
+
+input{
+	border:1px;
+    border-radius:5px;
+    height:45px;
+    width:300px;
+    margin:10px;
+    font-size:21px;
+    padding:0px 9px 0px 9px;
+    text-align:center;
+    border-style:solid;
+	border-color:gray;
+}
+
+button{
+	border:1px;
+    border-radius:5px;
+    height:43px;
+	width:180px;
+	margin:10px;
+	font-size:18px;
+	padding:0px 9px 0px 9px;
+	background-color:#787878;
+	border-style:solid;
+	border-color:black;
+}
+
