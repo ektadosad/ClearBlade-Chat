@@ -8,25 +8,25 @@ var ToggleDisplay = React.createClass({
         show: React.PropTypes.bool
     },
     
-    shouldHide: function() {
-        var shouldHide;
+    hideView: function() {
+        var hideView;
         if(isDefined(this.props.show)) {
-            shouldHide = !this.props.show;
+            hideView = !this.props.show;
         }
         else if(isDefined(this.props.hide)) {
-            shouldHide = this.props.hide;
+            hideView = this.props.hide;
         }
         else {
-            shouldHide = false;
+            hideView = false;
         }
         
-        return shouldHide;
+        return hideView;
     },
     
     render: function() {
         var style = {};
         
-        if(this.shouldHide()) {
+        if(this.hideView()) {
             style.display = 'none';
         }
         
@@ -93,7 +93,7 @@ var App = React.createClass({
     //log in function.
     handleClick: function() {
         var USER = document.getElementById("username").value
-        if(!USER || USER.length === 0){
+        if(!USER || string.trim().length() == 0){
             document.getElementById("errorMessage").innerHTML="Pleae enter valid username";
         }
         else{
